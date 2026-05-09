@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акции — Linen & Soul</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ВЕРХНЯЯ СТРОКА -->
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-left">
+            <span>🚚 Бесплатная доставка от 5000 ₽</span>
+            <span>🔄 Возврат в течение 14 дней</span>
+        </div>
+        <div class="top-bar-right">
+            <div class="top-bar-social">
+                <a href="#" target="_blank" class="social-icon"><img src="images/vk.svg" alt="VK"></a>
+                <a href="#" target="_blank" class="social-icon"><img src="images/tg.svg" alt="Telegram"></a>
+                <a href="#" target="_blank" class="social-icon"><img src="images/max.svg" alt="MaX"></a>
+            </div>
+            <a href="tel:8800XXXXXXX" class="phone-link">8-800-XXX-XX-XX</a>
+        </div>
+    </div>
+</div>
+
+<!-- ШАПКА -->
+<div class="header">
+    <div class="container main-header">
+        <div class="header-inner">
+
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Linen & Soul" style="height: 60px;">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="catalog.html" class="nav-link">Каталог</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="catalog.html?category=bedding">Постельное бельё</a></li>
+                            <li><a href="catalog.html?category=blankets">Одеяла и подушки</a></li>
+                            <li><a href="catalog.html?category=accessories">Постельные принадлежности</a></li>
+                            <li><a href="catalog.html?category=throws">Покрывала и пледы</a></li>
+                            <li><a href="catalog.html?category=bath">Банные принадлежности</a></li>
+                            <li><a href="catalog.html?category=kids">Для детей</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">О нас</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="production.html">Наше производство</a></li>
+                            <li><a href="certificates.html">Сертификаты</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="new.html" class="nav-link">Новинки</a></li>
+                    <li class="nav-item promo-item"><a href="promotions.html" class="nav-link promo-link">Акции</a></li>
+                    <li class="nav-item"><a href="hoteliers.html" class="nav-link">Отельерам</a></li>
+                    <li class="nav-item"><a href="dostavka-oplata.html" class="nav-link">Доставка и оплата</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+
+                <a href="#" class="icon-link search-icon" aria-label="Поиск">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                        <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                    </svg>
+                </a>
+
+                <a href="favorites.html" class="icon-link favorites-link" aria-label="Избранное" style="position: relative;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                    </svg>
+
+                    <span id="favorites-count" class="favorites-count">0</span>
+                </a>
+
+                <a href="account.html" class="icon-link" aria-label="Личный кабинет">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="7" r="4"></circle>
+                        <path d="M5.5 21c1.5-4 12.5-4 14 0"></path>
+                    </svg>
+                </a>
+
+                <div class="cart-wrapper">
+                    <a href="cart.html" class="icon-link" style="position: relative;" aria-label="Корзина">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
+                        </svg>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+
+                    <div id="mini-cart" class="mini-cart"></div>
+                </div>
+
+            </div>
+
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Мобильное меню (одна правильная версия) -->
+<div class="mobile-nav">
+    <ul class="mobile-nav-list">
+        <li class="mobile-nav-item"><a href="catalog.html">Каталог</a></li>
+        <li class="mobile-nav-item"><a href="#">О нас</a></li>
+        <li class="mobile-nav-item"><a href="#">Новинки</a></li>
+        <li class="mobile-nav-item"><a href="promotions.html">Акции</a></li>
+        <li class="mobile-nav-item"><a href="hoteliers.html">Отельерам</a></li>
+        <li class="mobile-nav-item"><a href="dostavka-oplata.html">Доставка и оплата</a></li>
+        <li class="mobile-nav-item"><a href="blog.html">Блог</a></li>
+        <li class="mobile-nav-item"><a href="#">Контакты</a></li>
+        <li class="mobile-nav-item social-item">
+            <a href="#" target="_blank"><img src="images/vk.svg" alt="VK"></a>
+            <a href="#" target="_blank"><img src="images/tg.svg" alt="Telegram"></a>
+            <a href="#" target="_blank"><img src="images/max.svg" alt="MaX"></a>
+        </li>
+        <li class="mobile-nav-item contact-item">
+            <a href="tel:8800XXXXXXX">8-800-XXX-XX-XX</a>
+        </li>
+    </ul>
+</div>
+
+<!-- Основной контент -->
+<div class="page-content">
+    <div class="container">
+        <h1 class="promotions-title">Акции и предложения</h1>
+        <div class="promotions-grid">
+
+            <!-- Карточка 1: Сезонная распродажа -->
+            <div class="promo-card sale-card">
+                <div class="promo-icon">🔥</div>
+                <h2 class="promo-heading">Сезонная распродажа</h2>
+                <p class="promo-text">Льняные и сатиновые комплекты прохладных оттенков со скидкой до 20%.</p>
+                <div class="countdown-timer" id="sale-timer"></div>
+                <a href="sale.html" class="btn-primary promo-btn">Выбрать</a>
+            </div>
+
+            <!-- Карточка 2: Конкурс «Уютный Дом» -->
+            <div class="promo-card contest-card">
+                <div class="promo-icon">🏡</div>
+                <h2 class="promo-heading">Конкурс «Уютный Дом»</h2>
+                <p class="promo-text">Сделайте фото уютного уголка дома и выиграйте сертификат 5 000 ₽.</p>
+                <a href="actions.html" class="btn-primary promo-btn">Подробнее</a>
+            </div>
+
+            <!-- Карточка 3: Накопительная скидка -->
+            <div class="promo-card loyalty-card">
+                <div class="promo-icon">💎</div>
+                <h2 class="promo-heading">Накопительная скидка до 15%</h2>
+                <p class="promo-text">Каждая покупка приближает вас к новому уровню скидки. Чем больше заказов, тем больше экономия.</p>
+
+                <div class="loyalty-steps">
+                    <span>1 заказ → 5%</span>
+                    <span>2 заказа → 10%</span>
+                    <span>3+ заказа → 15%</span>
+                </div>
+
+                <!-- ВАЖНО: здесь исправлена ссылка -->
+                <a href="loyalty.html" class="btn-primary promo-btn">Подробнее</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- ПОДВАЛ -->
+<div class="footer">
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="footer-tagline">Создаём уют с любовью к деталям</div>
+            <div class="footer-contacts">
+                <a href="tel:8800XXXXXXX">8-800-XXX-XX-XX</a>
+                <a href="mailto:hello@linensoul.ru">hello@linensoul.ru</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank" class="footer-icon"><img src="images/vk.svg" alt="VK"></a>
+                <a href="#" target="_blank" class="footer-icon"><img src="images/tg.svg" alt="Telegram"></a>
+                <a href="#" target="_blank" class="footer-icon"><img src="images/max.svg" alt="MaX"></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Информация</h4>
+            <a href="about.html">О компании</a>
+            <a href="rekvizity.html">Реквизиты</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="certificates.html">Сертификаты</a>
+        </div>
+        <div class="footer-col">
+            <h4>Помощь</h4>
+            <a href="dostavka-oplata.html">Доставка и оплата</a>
+            <a href="return.html">Условия возврата</a>
+            <a href="privacy.html">Политика конфиденциальности</a>
+            <a href="hoteliers.html">Для отелей и гостиниц</a>
+        </div>
+        <div class="footer-col footer-subscribe">
+            <div class="footer-logo">LINEN & <span>SOUL</span></div>
+            <p>Подпишитесь на наши новости и получите скидку 10% на первый заказ</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Ваш e-mail" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">© 2026 Linen & Soul — текстиль из натуральных тканей. Все права защищены.</div>
+</div>
+
+<!-- Toast корзины -->
+<div class="cart-toast" id="cart-toast">Товар добавлен в корзину</div>
+
+<!-- Модалка поиска -->
+<div class="search-modal" id="searchModal">
+    <div class="search-modal-content">
+        <button class="search-close">&times;</button>
+        <input type="text" id="searchInput" placeholder="Поиск по каталогу..." autofocus>
+        <div id="searchResults" class="search-results"></div>
+    </div>
+</div>
+
+<!-- ТАЙМЕР ДЛЯ КАРТОЧКИ "Сезонная распродажа" -->
+<script>
+function updatePromoTimer() {
+    const targetDate = new Date('July 31, 2026 23:59:59').getTime();
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    const el = document.getElementById('promo-timer');
+    if (!el) return; // безопасная проверка
+
+    if (diff <= 0) {
+        el.innerHTML = 'Распродажа завершена';
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const minutes = Math.floor((diff % 3600000) / 60000);
+    const seconds = Math.floor((diff % 60000) / 1000);
+
+    el.innerHTML = `${days}д ${hours}ч ${minutes}м ${seconds}с`;
+}
+
+setInterval(updatePromoTimer, 1000);
+updatePromoTimer();
+</script>
+
+<!-- ТАЙМЕР ДЛЯ БАННЕРА (sale-timer) -->
+<script>
+function updateSaleTimer() {
+    const targetDate = new Date('July 31, 2026 23:59:59').getTime();
+    const now = new Date().getTime();
+    const diff = targetDate - now;
+
+    const el = document.getElementById('sale-timer');
+    if (!el) return; // безопасная проверка
+
+    if (diff <= 0) {
+        el.innerHTML = 'Распродажа завершена';
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const minutes = Math.floor((diff % 3600000) / 60000);
+    const seconds = Math.floor((diff % 60000) / 1000);
+
+    el.innerHTML = `${days}д ${hours}ч ${minutes}м ${seconds}с`;
+}
+
+setInterval(updateSaleTimer, 1000);
+updateSaleTimer();
+</script>
+
+<script src="catalog.js"></script> 
+<script src="script.js"></script>
+<script src="cart.js"></script>
+
+<div class="cart-toast" id="cart-toast">Товар добавлен в корзину</div>
+</body>
+</html>

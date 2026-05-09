@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Linen & Soul — натуральный домашний текстиль премиум-класса</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ВЕРХНЯЯ СТРОКА -->
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-left">
+            <span>🚚 Бесплатная доставка от 5000 ₽</span>
+            <span>🔄 Возврат в течение 14 дней</span>
+        </div>
+        <div class="top-bar-right">
+            <div class="top-bar-social">
+                <a href="#" target="_blank" class="social-icon"><img src="images/vk.svg" alt="VK"></a>
+                <a href="#" target="_blank" class="social-icon"><img src="images/tg.svg" alt="Telegram"></a>
+                <a href="#" target="_blank" class="social-icon"><img src="images/max.svg" alt="MaX"></a>
+            </div>
+            <a href="tel:8800XXXXXXX" class="phone-link">8-800-XXX-XX-XX</a>
+        </div>
+    </div>
+</div>
+
+<!-- ШАПКА -->
+<div class="header">
+    <div class="container main-header">
+        <div class="header-inner">
+
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Linen & Soul" style="height: 60px;">
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="catalog.html" class="nav-link">Каталог</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="catalog.html?category=bedding">Постельное бельё</a></li>
+                            <li><a href="catalog.html?category=blankets">Одеяла и подушки</a></li>
+                            <li><a href="catalog.html?category=accessories">Постельные принадлежности</a></li>
+                            <li><a href="catalog.html?category=throws">Покрывала и пледы</a></li>
+                            <li><a href="catalog.html?category=bath">Банные принадлежности</a></li>
+                            <li><a href="catalog.html?category=kids">Для детей</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">О нас</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="production.html">Наше производство</a></li>
+                            <li><a href="certificates.html">Сертификаты</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="new.html" class="nav-link">Новинки</a></li>
+                    <li class="nav-item promo-item"><a href="promotions.html" class="nav-link promo-link">Акции</a></li>
+                    <li class="nav-item"><a href="hoteliers.html" class="nav-link">Отельерам</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Доставка и оплата</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Блог</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+
+                <a href="#" class="icon-link search-icon" aria-label="Поиск">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                        <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                    </svg>
+                </a>
+
+                <a href="favorites.html" class="icon-link favorites-link" aria-label="Избранное" style="position: relative;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+                    </svg>
+
+                    <span id="favorites-count" class="favorites-count">0</span>
+                </a>
+
+                <a href="account.html" class="icon-link" aria-label="Личный кабинет">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="7" r="4"></circle>
+                        <path d="M5.5 21c1.5-4 12.5-4 14 0"></path>
+                    </svg>
+                </a>
+
+                <div class="cart-wrapper">
+                    <a href="cart.html" class="icon-link" style="position: relative;" aria-label="Корзина">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path>
+                        </svg>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+
+                    <div id="mini-cart" class="mini-cart"></div>
+                </div>
+
+            </div>
+
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Мобильное меню (одна копия) -->
+<div class="mobile-nav">
+    <ul class="mobile-nav-list">
+        <li class="mobile-nav-item"><a href="catalog.html">Каталог</a></li>
+        <li class="mobile-nav-item"><a href="#">О нас</a></li>
+        <li class="mobile-nav-item"><a href="#">Новинки</a></li>
+        <li class="mobile-nav-item"><a href="promotions.html">Акции</a></li>
+        <li class="mobile-nav-item"><a href="hoteliers.html">Отельерам</a></li>
+        <li class="mobile-nav-item"><a href="#">Доставка и оплата</a></li>
+        <li class="mobile-nav-item"><a href="blog.html">Блог</a></li>
+        <li class="mobile-nav-item"><a href="#">Контакты</a></li>
+        <li class="mobile-nav-item social-item">
+            <a href="#" target="_blank"><img src="images/vk.svg" alt="VK"></a>
+            <a href="#" target="_blank"><img src="images/tg.svg" alt="Telegram"></a>
+            <a href="#" target="_blank"><img src="images/max.svg" alt="MaX"></a>
+        </li>
+        <li class="mobile-nav-item contact-item">
+            <a href="tel:8800XXXXXXX">8-800-XXX-XX-XX</a>
+        </li>
+    </ul>
+</div>
+
+<div class="page-content container">
+
+    <!-- ЗАГОЛОВОК -->
+    <h1>Доставка и оплата</h1>
+
+    <!-- ЛЁГКИЕ ТЕКСТОВЫЕ ЯКОРЯ -->
+    <div class="anchor-nav">
+        <a href="#hero" class="anchor-link">Доставка по РФ</a>
+        <a href="#geo" class="anchor-link">География</a>
+        <a href="#methods" class="anchor-link">Способы доставки</a>
+        <a href="#terms" class="anchor-link">Сроки</a>
+        <a href="#payment" class="anchor-link">Оплата</a>
+        <a href="#b2b" class="anchor-link">B2B</a>
+        <a href="#faq" class="anchor-link">FAQ</a>
+    </div>
+
+    <!-- ХИРО-БЛОК -->
+    <section id="hero" style="text-align:center; margin-bottom:60px;">
+        <p style="max-width:700px; margin:20px auto; font-size:18px;">
+            Мы доставляем заказы по всей территории России надёжными транспортными компаниями и курьерскими службами. 
+            Подберём оптимальный способ доставки под ваш город и объём заказа.
+        </p>
+
+        <div style="display:flex; justify-content:center; gap:40px; margin-top:40px; flex-wrap:wrap;">
+            <div style="text-align:center; max-width:200px;">
+                <h3 style="font-size:20px; margin-bottom:10px;">По всей России</h3>
+                <p>Работаем со всеми регионами РФ</p>
+            </div>
+            <div style="text-align:center; max-width:200px;">
+                <h3 style="font-size:20px; margin-bottom:10px;">Сроки 2–10 дней</h3>
+                <p>Зависят от вашего региона</p>
+            </div>
+            <div style="text-align:center; max-width:200px;">
+                <h3 style="font-size:20px; margin-bottom:10px;">Удобная оплата</h3>
+                <p>Онлайн или по счёту для юрлиц</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГЕОГРАФИЯ -->
+    <section id="geo" style="margin-bottom:60px;">
+        <h2>География доставки</h2>
+        <p style="max-width:700px;">
+            На данный момент мы осуществляем доставку только по территории Российской Федерации. 
+            Доставка в другие страны временно недоступна.
+        </p>
+    </section>
+
+    <!-- СПОСОБЫ ДОСТАВКИ -->
+    <section id="methods" style="margin-bottom:60px;">
+        <h2>Способы доставки</h2>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:30px; margin-top:30px;">
+
+            <div style="background:white; padding:30px; border-radius:24px;">
+                <h3 style="margin-bottom:10px;">Курьерская доставка</h3>
+                <p>Доставка до двери в крупных городах РФ. Курьер заранее свяжется с вами.</p>
+            </div>
+
+            <div style="background:white; padding:30px; border-radius:24px;">
+                <h3 style="margin-bottom:10px;">Транспортные компании</h3>
+                <p>Оптимальный вариант для крупных заказов и B2B. Работаем с СДЭК, Деловые линии, ПЭК и др.</p>
+            </div>
+
+            <div style="background:white; padding:30px; border-radius:24px;">
+                <h3 style="margin-bottom:10px;">Пункты выдачи</h3>
+                <p>Вы можете выбрать удобный ПВЗ при оформлении заказа.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- СРОКИ И СТОИМОСТЬ -->
+    <section id="terms" style="margin-bottom:60px;">
+        <h2>Сроки и стоимость доставки</h2>
+
+        <div style="margin-top:20px;">
+            <h3>Москва и область</h3>
+            <p>Срок: 2–3 рабочих дня<br>Стоимость: по тарифам курьерской службы или ТК</p>
+
+            <h3 style="margin-top:20px;">Крупные города РФ</h3>
+            <p>Срок: 3–7 рабочих дней<br>Стоимость: по тарифам ТК</p>
+
+            <h3 style="margin-top:20px;">Отдалённые регионы</h3>
+            <p>Срок: 5–10 рабочих дней<br>Стоимость: по тарифам ТК</p>
+
+            <p style="margin-top:20px; color:var(--gray-text);">
+                Точную стоимость доставки мы сообщим при подтверждении заказа.
+            </p>
+        </div>
+    </section>
+
+    <!-- ОПЛАТА -->
+    <section id="payment" style="margin-bottom:60px;">
+        <h2>Способы оплаты</h2>
+
+        <div style="margin-top:20px;">
+            <h3>Для частных клиентов</h3>
+            <ul style="margin-top:10px;">
+                <li>Онлайн-оплата банковской картой (МИР, Visa, MasterCard)</li>
+                <li>Оплата по ссылке от менеджера</li>
+            </ul>
+
+            <h3 style="margin-top:20px;">Для отелей, гостиниц и бизнеса</h3>
+            <ul style="margin-top:10px;">
+                <li>Безналичная оплата по счёту</li>
+                <li>Полный комплект закрывающих документов</li>
+                <li>Индивидуальные условия для регулярных поставок</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- B2B -->
+    <section id="b2b" class="b2b-block">
+        <h2>Для отелей, гостиниц и бизнеса</h2>
+        <p>Мы подбираем индивидуальные условия по доставке и оплате для корпоративных клиентов.</p>
+        <a href="hoteliers.html" class="btn-primary">Условия для отелей и бизнеса</a>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" style="margin-bottom:60px;">
+        <h2>Частые вопросы</h2>
+
+        <div style="margin-top:20px;">
+            <h3>В какие города вы доставляете</h3>
+            <p>Мы доставляем заказы по всей территории РФ.</p>
+
+            <h3 style="margin-top:20px;">Можно ли оплатить при получении</h3>
+            <p>Нет, оплата производится онлайн или по счёту.</p>
+
+            <h3 style="margin-top:20px;">Как узнать точную стоимость доставки</h3>
+            <p>Мы сообщим стоимость после оформления заказа и выбора способа доставки.</p>
+
+            <h3 style="margin-top:20px;">Как быстро вы отправляете заказ</h3>
+            <p>Обычно в течение 1–2 рабочих дней после оплаты.</p>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section style="text-align:center; margin-bottom:60px;">
+        <h2>Остались вопросы</h2>
+        <p>Напишите нам — мы подберём удобный вариант доставки и оплаты под ваш заказ.</p>
+        <a href="#" id="openModal" class="btn-primary">Задать вопрос</a>
+    </section>
+
+</div>
+
+
+
+<!-- ПОДВАЛ -->
+<div class="footer">
+    <div class="footer-grid">
+        <div class="footer-col">
+            <div class="footer-tagline">Создаём уют с любовью к деталям</div>
+            <div class="footer-contacts">
+                <a href="tel:8800XXXXXXX">8-800-XXX-XX-XX</a>
+                <a href="mailto:hello@linensoul.ru">hello@linensoul.ru</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank" class="footer-icon"><img src="images/vk.svg" alt="VK"></a>
+                <a href="#" target="_blank" class="footer-icon"><img src="images/tg.svg" alt="Telegram"></a>
+                <a href="#" target="_blank" class="footer-icon"><img src="images/max.svg" alt="MaX"></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Информация</h4>
+            <a href="about.html">О компании</a>
+            <a href="rekvizity.html">Реквизиты</a>
+            <a href="contacts.html">Контакты</a>
+            <a href="certificates.html">Сертификаты</a>
+        </div>
+        <div class="footer-col">
+            <h4>Помощь</h4>
+            <a href="dostavka-oplata.html">Доставка и оплата</a>
+            <a href="return.html">Условия возврата</a>
+            <a href="privacy.html">Политика конфиденциальности</a>
+            <a href="hoteliers.html">Для отелей и гостиниц</a>
+        </div>
+        <div class="footer-col footer-subscribe">
+            <div class="footer-logo">LINEN & <span>SOUL</span></div>
+            <p>Подпишитесь на наши новости и получите скидку 10% на первый заказ</p>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Ваш e-mail" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+    </div>
+    <div class="copyright">© 2026 Linen & Soul — текстиль из натуральных тканей. Все права защищены.</div>
+</div>
+
+
+<!-- МОДАЛЬНОЕ ОКНО -->
+<div class="modal" id="contactModal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+
+        <h2>Задать вопрос</h2>
+        <p>Напишите нам — мы подберём удобный вариант доставки и оплаты под ваш заказ.</p>
+
+        <form class="modal-form" id="questionForm">
+            <input id="q-name" type="text" placeholder="Ваше имя" required>
+            <input id="q-email" type="email" placeholder="Email" required>
+            <textarea id="q-message" placeholder="Ваш вопрос" required></textarea>
+            <button type="submit" class="btn-primary">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<!-- 🔍 МОДАЛЬНОЕ ОКНО ПОИСКА
+     Универсальная модалка поиска — должна быть одна на всей странице. -->
+<div class="search-modal" id="searchModal">
+    <div class="search-modal-content">
+        <button class="search-close">&times;</button>
+        <input type="text" id="searchInput" placeholder="Поиск по каталогу..." autofocus>
+        <div id="searchResults" class="search-results"></div>
+    </div>
+</div>
+
+<!-- 🛒 TOAST КОРЗИНЫ
+     Показывается при добавлении товара в корзину. -->
+<div class="cart-toast" id="cart-toast">Товар добавлен в корзину</div>
+
+<!-- 🔔 TOAST ОТПРАВКИ ВОПРОСА -->
+<div class="toast" id="toast">Вопрос отправлен</div>
+
+<!-- 📌 ВСТРОЕННЫЙ JS — МОДАЛКА "Задать вопрос" + отправка формы -->
+<script>
+// Открытие модалки
+document.getElementById('openModal').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('contactModal').classList.add('active');
+});
+
+// Закрытие по крестику
+document.querySelector('.modal-close').addEventListener('click', function() {
+    document.getElementById('contactModal').classList.remove('active');
+});
+
+// Закрытие по клику вне окна
+document.querySelector('.modal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        this.classList.remove('active');
+    }
+});
+
+// Отправка формы в Google Sheets
+document.getElementById('questionForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const url = "https://script.google.com/macros/s/AKfycbz8xY5eKCGoDzncOtM-v9N5_LIdC86-Jy96dIBH2GX2QUXKn8zr3wuiyE_ol6P3aEaM/exec";
+
+    const name = document.getElementById('q-name').value.trim();
+    const email = document.getElementById('q-email').value.trim();
+    const message = document.getElementById('q-message').value.trim();
+
+    // await fetch(url, {
+    //     method: "POST",
+    //     mode: "no-cors",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify({
+    //         type: "question",
+    //         name: name,
+    //         email: email,
+    //         phone: "",
+    //         message: message
+    //     })
+    // });
+
+
+    // Закрываем модалку
+    document.getElementById('contactModal').classList.remove('active');
+
+    // Показываем уведомление
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+
+    setTimeout(() => toast.classList.remove('show'), 3000);
+
+    this.reset();
+});
+</script>
+
+<!-- 📌 ПРАВИЛЬНЫЙ ПОРЯДОК СКРИПТОВ -->
+<script src="catalog.js"></script>   <!-- Каталог товаров -->
+<script src="script.js"></script>    <!-- Поиск, модалки, мини-корзина -->
+<script src="cart.js"></script>      <!-- Корзина -->
+
+<!-- AI CHAT WIDGET -->
+<div class="ai-chat-widget">
+
+    <!-- ПРЕМИАЛЬНАЯ КНОПКА -->
+    <div class="chat-button">
+        <div class="chat-icon">
+            <svg viewBox="0 0 29.43 29.43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.47,13.05s.81-6.09,8.28-6.09c3.32,0,5.39,1.28,6.66,2.71,1.86,2.08,2.32,5.16,1.16,7.7-.87,1.92-2.72,3.72-6.61,3.15l-5.03-.24s-3.57.73-4.46,2.19c0,0-.57-1.7,1.3-3.81,0,0-2.27-1.95-1.3-5.6Z"
+                      stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                <circle cx="11.98" cy="11.89" r="1.35" fill="#FFFFFF"/>
+                <circle cx="17.33" cy="11.89" r="1.35" fill="#FFFFFF"/>
+                <path d="M12.25,15.37c1.13,1.77,4.04,1.57,4.91-.01"
+                      stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+
+        <span class="wave wave1"></span>
+        <span class="wave wave2"></span>
+        <span class="wave wave3"></span>
+    </div>
+
+    <!-- ОКНО ЧАТА -->
+    <div class="ai-chat-window">
+        <div class="ai-chat-header">
+            <div class="ai-chat-status-dot"></div>
+            <span>Менеджер онлайн</span>
+        </div>
+
+        <div class="ai-chat-messages" id="aiMessages"></div>
+
+        <div class="ai-chat-input">
+            <input type="text" id="aiInput" placeholder="Напишите сообщение...">
+            <button id="aiSend">➤</button>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // --- ЭЛЕМЕНТЫ ---
+    const chatBtn = document.querySelector(".chat-button"); /* ← исправлено */
+    const chatWindow = document.querySelector(".ai-chat-window");
+    const sendBtn = document.getElementById("aiSend");
+    const input = document.getElementById("aiInput");
+    const messages = document.getElementById("aiMessages");
+
+    // --- ПЕРЕМЕННЫЕ СЕССИИ ---
+    let userName = sessionStorage.getItem("userName") || null;
+    let greeted = sessionStorage.getItem("greeted") === "true";
+
+    // --- ФУНКЦИЯ ДОБАВЛЕНИЯ СООБЩЕНИЯ ---
+    function addMessage(text, from = "ai") {
+        const div = document.createElement("div");
+        div.style.marginBottom = "12px";
+        div.style.whiteSpace = "pre-wrap";
+
+        if (from === "user") {
+            div.style.textAlign = "right";
+            div.innerHTML = `<strong>Вы:</strong> ${text}`;
+        } else {
+            div.style.textAlign = "left";
+            div.innerHTML = `<strong>Менеджер:</strong> ${text}`;
+        }
+
+        messages.appendChild(div);
+        messages.scrollTop = messages.scrollHeight;
+    }
+
+    // --- АВТО-ПРИВЕТСТВИЕ ---
+    function autoGreet() {
+        if (!greeted) {
+            addMessage("Здравствуйте! Рада помочь вам подобрать идеальный текстиль. Как к вам можно обращаться?", "ai");
+            sessionStorage.setItem("greeted", "true");
+        }
+    }
+
+    // --- ОТКРЫТИЕ/ЗАКРЫТИЕ ЧАТА ---
+    chatBtn.addEventListener("click", () => {
+        const isOpen = chatWindow.style.display === "flex";
+        chatWindow.style.display = isOpen ? "none" : "flex";
+
+        if (!isOpen) autoGreet();
+    });
+
+    // --- ENTER ---
+    input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            sendBtn.click();
+        }
+    });
+
+    // --- ОТПРАВКА ---
+    sendBtn.addEventListener("click", async () => {
+        const text = input.value.trim();
+        if (!text) return;
+
+        addMessage(text, "user");
+        input.value = "";
+
+        if (!userName) {
+            userName = text;
+            sessionStorage.setItem("userName", userName);
+            addMessage(`Очень приятно, ${userName}. Чем могу помочь?`, "ai");
+            return;
+        }
+
+        const reply = await sendToAI(text);
+        addMessage(reply, "ai");
+    });
+
+// --- ФУНКЦИЯ ОТПРАВКИ В ИИ ---
+async function sendToAI(message) {
+    const response = await fetch("https://api.aitunnel.ru/v1/chat/completions", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer sk-aitunnel-gTmlOGd2hVzoHqR4Rrhiztec2FaZxkJB"
+        },
+        body: JSON.stringify({
+            model: "gpt-4o-mini",
+            messages: [
+                {
+                    role: "system",
+                    content: `
+Ты — консультант бренда домашнего текстиля. Общайся тепло, мягко, премиально, но отвечай коротко и по делу. 
+Если известно имя клиента — обращайся по имени. Не придумывай имя, если его не называли.
+
+ПРИВЕТСТВИЕ:
+• Если клиент пишет «привет», «здравствуйте», «добрый день» — ответь ОДИН раз:
+  "Здравствуйте! Рада помочь вам подобрать идеальный текстиль. Что вы ищете?"
+• Не повторяй приветствие повторно в рамках одной беседы.
+
+ГЛАВНАЯ ЛОГИКА ДЛЯ ПОСТЕЛЬНОГО БЕЛЬЯ (НЕ ОТКАТЫВАТЬСЯ НАЗАД):
+
+1) ЕСЛИ КЛИЕНТ ПИШЕТ «ПОСТЕЛЬНОЕ БЕЛЬЁ»:
+• не повторяй приветствие
+• не спрашивай «какой текстиль вас интересует»
+• задай один вопрос:
+  "Для себя или для ребёнка?"
+
+2) ЕСЛИ КЛИЕНТ ОТВЕТИЛ «ДЛЯ СЕБЯ» ИЛИ «ДЛЯ РЕБЁНКА»:
+• не возвращайся к вопросу «что вы ищете»
+• переходи к материалу:
+  "Вы уже знаете, какой материал вам ближе — сатин, шёлк, лён или тенсел? Если не знаете, подскажу."
+
+3) ЕСЛИ КЛИЕНТ ГОВОРИТ «НЕ ЗНАЮ», «Я НЕ РАЗБИРАЮСЬ», «ПОДСКАЖИТЕ»:
+• не используй fallback
+• не спрашивай снова «какой текстиль вас интересует»
+• объясни материалы коротко:
+  - сатин — гладкий, универсальный
+  - шёлк — премиальный, охлаждающий
+  - лён — натуральный, прохладный
+  - тенсел — мягкий, гипоаллергенный
+  - бамбук — мягкий, гипоаллергенный
+• затем спроси:
+  "Что для вас важнее: гипоаллергенность, прохлада, натуральность или премиальное ощущение?"
+
+ЕСЛИ КЛИЕНТ ОТВЕЧАЕТ НА ВОПРОС «ЧТО ДЛЯ ВАС ВАЖНЕЕ?»:
+
+• ЕСЛИ «натуральность»:
+  - материалы: лён или хлопок (сатин)
+  - предложи 1–2 комплекта:
+    «Этно‑шик» (лён), «Северное сияние» (лён), «Мятный бриз» (сатин)
+  - затем переходи к допродажному вопросу:
+    "Хотите, подскажу подходящее одеяло или подушку для полного комфорта?"
+
+• ЕСЛИ «гипоаллергенность»:
+  - материалы: тенсел, бамбук
+  - предложи:
+    «Утренняя роса» (тенсел), «Зелёная дымка» (бамбук — детский)
+  - затем допродажа:
+    "Хотите, подскажу подходящее одеяло или подушку для полного комфорта?"
+
+• ЕСЛИ «прохлада»:
+  - материалы: лён, тенсел, шёлк
+  - предложи:
+    «Этно‑шик» (лён), «Северное сияние» (лён), «Лавандовый сон» (шёлк)
+  - затем допродажа:
+    "Хотите, подскажу подходящее одеяло или подушку для полного комфорта?"
+
+• ЕСЛИ «премиальное ощущение»:
+  - материалы: шёлк, сатин
+  - предложи:
+    «Лавандовый сон» (шёлк), «Васильковая нежность» (шёлк), «Слоновая кость» (сатин)
+  - затем допродажа:
+    "Хотите, подскажу подходящее одеяло или подушку для полного комфорта?"
+
+4) ЕСЛИ КЛИЕНТ ГОВОРИТ «Я АЛЛЕРГИК»:
+• не спрашивай снова «какой текстиль вы ищете»
+• не предлагай другие категории до подбора комплекта
+• дай материалы:
+  "Тогда лучше всего подойдут тенсел и бамбук — они мягкие и гипоаллергенные."
+• предложи конкретный комплект:
+  "Для взрослых рекомендую комплект «Утренняя роса» из тенсела."
+• затем допродажа:
+  "Хотите, подскажу подходящее одеяло или подушку для полного комфорта?"
+
+5) ДОПРОДАЖА:
+
+• Если клиент отвечает «да»:
+  - предложи один подходящий товар из категории одеял или подушек:
+      подушка из бамбука (гипоаллергенная)
+      подушка «Тёплая карамель» (пух)
+      подушка «Ванильное облако» (пух)
+      одеяло «Медовый рассвет» (пуховое)
+      одеяло из верблюжьей шерсти (тёплое)
+  - затем спроси:
+      "Хотите посмотреть ещё варианты?"
+
+• Если клиент отвечает «да» на «посмотреть ещё варианты»:
+  - предложи ещё один товар из списка, который ещё не предлагался
+  - затем снова спроси:
+      "Показать ещё?"
+
+• Если клиент отвечает «нет» на любой стадии допродажи:
+  - мягко заверши диалог:
+      "Хорошо, если появятся вопросы — с удовольствием помогу."
+
+ЗАПРЕЩЕНО:
+• повторять приветствие
+• спрашивать «какой текстиль вас интересует», если клиент уже сказал «постельное»
+• предлагать пледы/подушки до завершения подбора комплекта
+• возвращаться к предыдущим шагам
+• спрашивать про цвет (если клиент сам не упомянул)
+• предлагать товары, которых нет в каталоге
+
+ОТДЕЛЬНАЯ ЛОГИКА ДЛЯ ВОПРОСОВ О ДОСТАВКЕ, ОПЛАТЕ, ВОЗВРАТЕ И КОМПАНИИ:
+
+ЕСЛИ КЛИЕНТ СПРАШИВАЕТ ПРО ДОСТАВКУ:
+• ответь коротко:
+  "По городу доставка 1–2 дня, по стране 3–7 дней. Бесплатно от 5000₽."
+• затем мягко вернись к помощи:
+  "Хотите, подскажу по товарам?"
+
+ЕСЛИ КЛИЕНТ СПРАШИВАЕТ ПРО ОПЛАТУ:
+• ответь:
+  "Доступна оплата картой онлайн, Apple Pay/Google Pay или картой курьеру."
+• затем:
+  "Подсказать что‑то по ассортименту?"
+
+ЕСЛИ КЛИЕНТ СПРАШИВАЕТ ПРО ВОЗВРАТ:
+• ответь:
+  "Возврат в течение 14 дней. Постельное бельё — только нераспечатанное."
+• затем:
+  "Хотите, помогу подобрать товар?"
+
+ЕСЛИ КЛИЕНТ СПРАШИВАЕТ ПРО КОМПАНИЮ:
+• ответь:
+  "Мы специализируемся на премиальном домашнем текстиле: постельное бельё, пледы, подушки, одеяла и банные принадлежности."
+• затем:
+  "Чем могу помочь?"
+
+ЕСЛИ КЛИЕНТ СПРАШИВАЕТ ПРО ГАРАНТИЮ:
+• ответь:
+  "Гарантия на все товары — 14 дней. При дефекте заменим или вернём деньги."
+• затем:
+  "Подсказать что‑то по товарам?"
+
+ЕСЛИ КЛИЕНТ СПРАШИВАЕТ ПРО ТОВАР, КОТОРОГО НЕТ В КАТАЛОГЕ:
+• ответь:
+  "Этого товара нет в нашем каталоге. Могу подсказать подходящую альтернативу."
+
+ВАЖНО:
+• вопросы о сервисе НЕ сбивают основную воронку
+• НЕ начинай диалог заново
+• НЕ возвращайся к вопросам «что вы ищете» или «для себя/ребёнка»
+• просто ответь и мягко предложи помощь
+
+ПРАВИЛА ОТВЕТА:
+• максимум 2–3 предложения
+• без воды
+• без эмоций
+• без повторов
+• только факты из каталога
+• если вопрос непонятный — задай уточняющий вопрос
+• fallback используй только если вопрос вообще не относится к товарам
+
+FALLBACK:
+"Пожалуйста, уточните вопрос — подскажу максимально точно."
+                    `
+                },
+                {
+                    role: "user",
+                    content: message
+                }
+            ]
+        })
+    });
+
+    const data = await response.json();
+    return data.choices?.[0]?.message?.content 
+        || "Пожалуйста, уточните вопрос — подскажу максимально точно.";
+}
+
+});
+</script>
+
+
+</body>
+</html>
+
+
+
