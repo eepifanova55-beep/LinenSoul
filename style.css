@@ -5463,3 +5463,79 @@ h2, .section-title, .sleep-main-title, .catalog-title, .blog-page-title {
     min-height: 48px; /* или 2 строки */
 }
 
+/* =========================
+   МОБИЛЬНАЯ ШАПКА (идеальная)
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Шапка — одна строка */
+    .header-inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Логотип слева */
+    .logo {
+        margin: 0;
+        padding: 0;
+        flex: 0 0 auto;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        height: 48px;
+    }
+
+    /* Меню скрываем */
+    .nav {
+        display: none !important;
+    }
+
+    /* Контейнер справа: поиск, избранное, корзина, бургер */
+    .header-icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        flex: 0 0 auto;
+    }
+
+    /* Бургер справа, в одном ряду с иконками */
+    .burger-menu {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 26px;
+        height: 18px;
+        cursor: pointer;
+        margin-left: 4px;
+    }
+
+    /* Убираем конфликтующие отступы */
+    .nav {
+        margin-top: 0 !important;
+    }
+
+    .header-inner {
+        gap: 0 !important;
+    }
+
+    /* Верхняя строка (top-bar) — аккуратнее */
+    .top-bar .container {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    /* Волна под баннером скрывается */
+    .wave-divider {
+        display: none;
+    }
+}
